@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+:root{
+  --primary-color:#181818;
+  --secondary-color:#e5e7eb;
+  --tertiary-color:transparent;
+  --normal:1.25em;
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  color:var(--secondary-color);
+}
+
+body{
+  width:100%;
+  min-height:100vh;
+  background-color:var(--primary-color);
+}
+
+.header{
+  font-family: 'Space Mono', monospace;
+  font-size:1.75rem;
+}
+
+.header{
+  color:#FFF;
+}
+
+.info{
+  padding:2em;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size:var(--normal);
+}
+
+.info span{
+  border:1px solid #FFF;
+  padding:calc(var(--normal) / 2);
+  border-radius:var(--normal);
+  cursor: pointer;
+  font-size:calc(var(--normal) * 2);
+}
+
+.info aside{
+  max-width:300px;
+  width:90%;
+  margin:1em 0;
+  text-align:right;
+  display:none;
+  transition:500ms all;
+}
+
+.info aside h2{
+  margin:.5em 0;
+}
+
+.info aside ul{
+  list-style:none;
+}
+
+.info aside ul li{
+  margin:.24em 0;
+}
+
+.info aside section input{
+  color:var(--primary-color);
+  font-size:var(--normal);
+  max-width:calc(var(--normal) * 2);
+}
+
+form{
+  max-width:600px;
+  width:90%;
+  margin:0 auto;
+  text-align:center;
+}
+
+form #display{
+  width:100%;
+  font-size:calc(var(--normal) * 2);
+  text-align: center;
+  border:none;
+  outline:none;
+  border-radius:.5em;
+  margin:.5em 0;
+  color:var(--primary-color);
+}
+
+.buttons input{
+  font-size:calc(var(--normal) * 1.4);
+  padding:.24em .5em;
+  color:var(--primary-color);
+}
+
+.buttons input:nth-child(2){
+  background-color:transparent;
+  color:#FFF;
+  margin:0 0 0 1em ;
+}
+
+.show{
+  display:block !important;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="info">
+            <span info-toggler>
+                <i class="fa fa-info" aria-hidden="true"></i>
+            </span>
+            <aside info-tab>
+
+                <section>
+                    <h2 class="header">
+                        <u>About</u>
+                    </h2>
+
+                    <p>
+                        Generate random strings for passwords, encryption keys etc
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="header">
+                        <u>Shortcut</u>
+                    </h2>
+                    <ul>
+                        <li><b>Copy:</b> Ctrl + C</li>
+                        <li><b>Generate:</b> Ctrl + Z</li>
+                        <li><b>Toggle Info:</b> Ctrl + X</li>
+                    </ul>
+                </section>
+
+                <section>
+
+                    <h2 class="header">
+                        <u>Parameters</u>
+                    </h2>
+
+                    <section>
+                        <label for="length">Length: </label>
+                        <input type="number" name="length" min="5" max="100" key-length>
+                    </section>
+
+                    <section>
+                        <label for="uppercase">Uppercase: </label>
+                        <input type="checkbox" name="uppercase" key-uppercase>
+                    </section>
+
+                    <section>
+                        <label for="lowercase">Lowercase: </label>
+                        <input type="checkbox" name="lowercase" key-lowercase>
+                    </section>
+
+                    <section>
+                        <label for="numbers">Numbers: </label>
+                        <input type="checkbox" name="numbers" key-number>
+                    </section>
+
+                    <section>
+                        <label for="characters">Special Characters: </label>
+                        <input type="checkbox" name="characters" key-special>
+                    </section>
+
+                </section>
+
+
+            </aside>
+        </section>
+
+
+        <form name="myForm">
+            <h2 class="header">RANDOM GENERATOR</h2>
+            <section>
+
+                <input type="text" id="display" readonly value="----" />
+
+                <section class="buttons">
+                    <input type="submit" value="GENERATE" id="submit">
+                    <input type="submit" value="COPY" id="copy">
+                </section>
+
+            </section>
+        </form>
+
+    </main>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
