@@ -14,8 +14,6 @@ const upperAlpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
 
 const special = ['!', '@', '$', '#', ':', '%', '-', '_']
 
-const targetCharacters = new Array()
-
 
 // Event Listeners
 document.addEventListener('keydown', handleKeyboard)
@@ -33,6 +31,8 @@ function generateKey(event) {
     if (event) {
         event.preventDefault()
     }
+
+    const targetCharacters = new Array()
 
     const keylength = document.querySelector('[key-length]').value
     const specialKey = document.querySelector('[key-special]').checked
