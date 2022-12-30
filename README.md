@@ -2,4 +2,4 @@
 ---
 Generate random strings for passwords, encryption keys etc
 
-Live website: 
+Live website: [alienxr-keygen.netlify.app](alienxr-keygen.netlify.app)
