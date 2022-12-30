@@ -40,8 +40,25 @@ function generateKey(event) {
     const uppercasekey = document.querySelector('[key-uppercase]').checked
     const lowercasekey = document.querySelector('[key-lowercase]').checked
 
-    console.log(lowercasekey)
-    console.log(uppercasekey)
+    if (!uppercasekey && !lowercasekey && !numberKey && !specialKey) {
+
+        upperAlpha.forEach(character => {
+            targetCharacters.push(character)
+        })
+
+        lowerAlpha.forEach(character => {
+            targetCharacters.push(character)
+        })
+
+        numbers.forEach(character => {
+            targetCharacters.push(character)
+        })
+
+        special.forEach(character => {
+            targetCharacters.push(character)
+        })
+
+    }
 
     if (uppercasekey) {
         upperAlpha.forEach(character => {
@@ -77,7 +94,7 @@ function generateKey(event) {
         return number
     }
 
-    let random = (keylength > 5) ? keylength : randomNumber(8, 20)
+    let random = (keylength > 4) ? keylength : randomNumber(8, 20)
 
     let key = []
 
